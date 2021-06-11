@@ -1,23 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+const App = () => {
+
+  const [ cypherTerm, setCypherTerm ] = useState("");
+
+  const handleCypherInput = (event) => setCypherTerm(event.target.value); 
+
+  const codeBreaker = (code) => {
+    let cypher = {
+        a: "z",
+        b: "y",
+        c: "x",
+        d: "w",
+        e: "v",
+        f: "u",
+        g: "t",
+        h: "s",
+        i: "r",
+        j: "q",
+        k: "p",
+        l: "o",
+        m: "n",
+        n: "m",
+        o: "l",
+        p: "k",
+        q: "j",
+        r: "i",
+        s: "h",
+        t: "g",
+        u: "f",
+        v: "e",
+        w: "d",
+        x: "c",
+        y: "b",
+        z: "a"
+    }
+    let string = cypherTerm.split(" ");
+    let cracked = [];
+  
+    string.forEach(word => {
+        let newWord = [];
+        word.split("").forEach(letter => newWord.push(cypher[letter]));
+        cracked.push(newWord.join(""));
+    });
+    return cracked.join(" ");
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hunt-A-Killer Cypher</h1>
+      input cypher: <input value={cypherTerm} onChange={handleCypherInput} />
+      <p>{codeBreaker(cypherTerm)}</p>
     </div>
   );
 }
