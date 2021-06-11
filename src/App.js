@@ -35,7 +35,7 @@ const App = () => {
         y: "b",
         z: "a"
     }
-    let string = cypherTerm.split(" ");
+    let string = cypherTerm.toLowerCase().split(" ");
     let cracked = [];
   
     string.forEach(word => {
