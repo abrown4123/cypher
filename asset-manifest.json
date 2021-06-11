@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cypher/static/css/main.899c8c77.chunk.css",
+    "main.js": "/cypher/static/js/main.122bbf5a.chunk.js",
+    "main.js.map": "/cypher/static/js/main.122bbf5a.chunk.js.map",
+    "runtime-main.js": "/cypher/static/js/runtime-main.5ca0f202.js",
+    "runtime-main.js.map": "/cypher/static/js/runtime-main.5ca0f202.js.map",
+    "static/js/2.579840c3.chunk.js": "/cypher/static/js/2.579840c3.chunk.js",
+    "static/js/2.579840c3.chunk.js.map": "/cypher/static/js/2.579840c3.chunk.js.map",
+    "index.html": "/cypher/index.html",
+    "static/css/main.899c8c77.chunk.css.map": "/cypher/static/css/main.899c8c77.chunk.css.map",
+    "static/js/2.579840c3.chunk.js.LICENSE.txt": "/cypher/static/js/2.579840c3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ca0f202.js",
+    "static/js/2.579840c3.chunk.js",
+    "static/css/main.899c8c77.chunk.css",
+    "static/js/main.122bbf5a.chunk.js"
+  ]
+}
